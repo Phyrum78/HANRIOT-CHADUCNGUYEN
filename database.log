@@ -1,0 +1,37 @@
+1718289864471|1|statement|select e1_1.etudiant_id,e1_1.ecole_id,e1_1.nom,e1_1.prenom from projet p1_0 join etudiant_projet e1_0 on p1_0.projet_id=e1_0.projet_id join etudiant e1_1 on e1_1.etudiant_id=e1_0.etudiant_id where p1_0.projet_id=1
+1718289864527|0|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=1
+1718291274180|15|statement|select * from information_schema.sequences
+1718291274273|2|statement|select * from "public"."adresse" where 1=0
+1718291274304|2|statement|select * from "public"."ecole" where 1=0
+1718291274330|3|statement|select * from "public"."etudiant" where 1=0
+1718291274340|1|statement|select * from "public"."projet" where 1=0
+1718291281916|1|statement|select e1_1.etudiant_id,e1_1.ecole_id,e1_1.nom,e1_1.prenom from projet p1_0 join etudiant_projet e1_0 on p1_0.projet_id=e1_0.projet_id join etudiant e1_1 on e1_1.etudiant_id=e1_0.etudiant_id where p1_0.projet_id=1
+1718291281978|0|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=1
+1718291289492|1|statement|select e1_0.ecole_id,e1_0.adresse_id,e1_0.domaine_ecole,e1_0.nom_ecole from ecole e1_0 offset 0 rows fetch first 5 rows only
+1718291289501|0|commit|
+1718291289524|0|statement|select e1_0.ecole_id,e1_0.etudiant_id,e1_0.nom,e1_0.prenom from etudiant e1_0 where e1_0.ecole_id = any ('{"1","2","3","4"}')
+1718291289527|0|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id = any ('{"1","2","3","4"}')
+1718291289535|0|statement|select a1_0.adresse_id,a1_0.code_postal,a1_0.complement_adresse,e1_0.ecole_id,e1_0.domaine_ecole,e1_0.nom_ecole,a1_0.ville from adresse a1_0 left join ecole e1_0 on a1_0.adresse_id=e1_0.adresse_id where a1_0.adresse_id=1
+1718291289539|0|statement|select a1_0.adresse_id,a1_0.code_postal,a1_0.complement_adresse,e1_0.ecole_id,e1_0.domaine_ecole,e1_0.nom_ecole,a1_0.ville from adresse a1_0 left join ecole e1_0 on a1_0.adresse_id=e1_0.adresse_id where a1_0.adresse_id=2
+1718291289541|0|statement|select a1_0.adresse_id,a1_0.code_postal,a1_0.complement_adresse,e1_0.ecole_id,e1_0.domaine_ecole,e1_0.nom_ecole,a1_0.ville from adresse a1_0 left join ecole e1_0 on a1_0.adresse_id=e1_0.adresse_id where a1_0.adresse_id=3
+1718291289543|0|statement|select a1_0.adresse_id,a1_0.code_postal,a1_0.complement_adresse,e1_0.ecole_id,e1_0.domaine_ecole,e1_0.nom_ecole,a1_0.ville from adresse a1_0 left join ecole e1_0 on a1_0.adresse_id=e1_0.adresse_id where a1_0.adresse_id=4
+1718291313403|0|statement|select e1_0.ecole_id,e1_0.adresse_id,e1_0.domaine_ecole,e1_0.nom_ecole from ecole e1_0 offset 5 rows fetch first 5 rows only
+1718291313413|0|statement|select count(e1_0.ecole_id) from ecole e1_0
+1718291313414|0|commit|
+1718291330532|0|statement|select e1_0.ecole_id,e1_0.adresse_id,e1_0.domaine_ecole,e1_0.nom_ecole from ecole e1_0 offset 1 rows fetch first 1 rows only
+1718291330538|0|statement|select count(e1_0.ecole_id) from ecole e1_0
+1718291330539|0|commit|
+1718291330540|0|statement|select e1_0.ecole_id,e1_0.etudiant_id,e1_0.nom,e1_0.prenom from etudiant e1_0 where e1_0.ecole_id=2
+1718291330546|2|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=2
+1718291330557|0|statement|select a1_0.adresse_id,a1_0.code_postal,a1_0.complement_adresse,e1_0.ecole_id,e1_0.domaine_ecole,e1_0.nom_ecole,a1_0.ville from adresse a1_0 left join ecole e1_0 on a1_0.adresse_id=e1_0.adresse_id where a1_0.adresse_id=2
+1718291380916|0|statement|select e1_0.ecole_id,e1_0.adresse_id,e1_0.domaine_ecole,e1_0.nom_ecole from ecole e1_0 offset 3 rows fetch first 3 rows only
+1718291380917|0|commit|
+1718291380919|0|statement|select e1_0.ecole_id,e1_0.etudiant_id,e1_0.nom,e1_0.prenom from etudiant e1_0 where e1_0.ecole_id=4
+1718291380920|0|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=4
+1718291380923|0|statement|select a1_0.adresse_id,a1_0.code_postal,a1_0.complement_adresse,e1_0.ecole_id,e1_0.domaine_ecole,e1_0.nom_ecole,a1_0.ville from adresse a1_0 left join ecole e1_0 on a1_0.adresse_id=e1_0.adresse_id where a1_0.adresse_id=4
+1718291425349|4|statement|insert into adresse (code_postal,complement_adresse,ville) values (95800,'riendutout','Cergy')
+1718291425361|1|statement|insert into ecole (adresse_id,domaine_ecole,nom_ecole) values (5,'informatique','essie-it')
+1718291425364|0|statement|insert into etudiant (ecole_id,nom,prenom) values (5,'test','louis')
+1718291425365|0|statement|insert into projet (nom_projet) values ('MyParty')
+1718291425392|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (5,5)
+1718291425394|0|commit|
