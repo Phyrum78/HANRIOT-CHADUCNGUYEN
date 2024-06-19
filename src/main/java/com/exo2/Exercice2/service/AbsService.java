@@ -37,7 +37,8 @@ public abstract class AbsService<Dto,
     }
 
     public Dto insertOne(Dto dto) {
-        Entity save = repository.save(toEntity(dto));
+        Entity toSave = toEntity(dto);
+        Entity save = repository.save(toSave);
         return toDto(save);
     }
 

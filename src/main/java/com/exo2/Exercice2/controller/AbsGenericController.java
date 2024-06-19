@@ -4,7 +4,10 @@ import com.exo2.Exercice2.dto.AbsDto;
 import com.exo2.Exercice2.exception.EntityNotFoundExecption;
 import com.exo2.Exercice2.service.AbsService;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.Caching;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -37,12 +40,16 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
     }
 
     @PostMapping
-    public ResponseEntity<Dto> insertOne(Dto dto) {
+    @Caching(evict = {@CacheEvict(cacheNames = "#root.target.getClass().getName() + '*'", allEntries = true)})
+    public ResponseEntity<Dto> insertOne(@RequestBody Dto dto) {
         return ResponseEntity.ok(service.insertOne(dto));
     }
 
     @PutMapping
-    public ResponseEntity<Dto> updateOne(Dto dto) {
+    @Caching(evict = {@CacheEvict(cacheNames = "#root.target.getClass().getName() + '*'", allEntries = true),
+    }, put = @CachePut(value = "findById", key = "#root.target.getClass().getName()-#dto.id")
+    )
+    public ResponseEntity<Dto> updateOne(@RequestBody Dto dto) {
         try {
             return ResponseEntity.ok(service.updateOne(dto, dto.getId()));
         } catch (EntityNotFoundExecption exception) {
