@@ -1,6 +1,6 @@
 package com.exo2.Exercice2.entity;
 
-public enum VideoGames {
+public enum VideoGamesType {
 
     ACTION,
     ADVENTURE,

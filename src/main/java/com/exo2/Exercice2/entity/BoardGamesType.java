@@ -1,6 +1,6 @@
 package com.exo2.Exercice2.entity;
 
-public enum BoardGames {
+public enum BoardGamesType {
     MONOPOLY,
     RISK,
     CIVILIZATION,
