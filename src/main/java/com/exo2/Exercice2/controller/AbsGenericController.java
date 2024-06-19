@@ -4,10 +4,6 @@ import com.exo2.Exercice2.dto.AbsDto;
 import com.exo2.Exercice2.exception.EntityNotFoundExecption;
 import com.exo2.Exercice2.service.AbsService;
 import lombok.AllArgsConstructor;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.Caching;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -22,7 +18,6 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
     Service service;
 
     @GetMapping
-    @Cacheable(value = "findAll", key = "#root.target.getClass().getName() + '#page-#amount'")
     public ResponseEntity<List<Dto>> ndAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int amount) {
         Pageable pageable = PageRequest.of(page, amount);
 
@@ -30,7 +25,6 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
     }
 
     @GetMapping("{id}")
-    @Cacheable(value = "findById", key = "#root.target.getClass().getName() + '#id'")
     public ResponseEntity<Dto> findOneById(@PathVariable ID id) {
         try {
             return ResponseEntity.ok(service.findOne(id));
@@ -40,15 +34,11 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
     }
 
     @PostMapping
-    @Caching(evict = {@CacheEvict(cacheNames = "#root.target.getClass().getName() + '*'", allEntries = true)})
     public ResponseEntity<Dto> insertOne(@RequestBody Dto dto) {
         return ResponseEntity.ok(service.insertOne(dto));
     }
 
     @PutMapping
-    @Caching(evict = {@CacheEvict(cacheNames = "#root.target.getClass().getName() + '*'", allEntries = true),
-    }, put = @CachePut(value = "findById", key = "#root.target.getClass().getName() + '#id'")
-    )
     public ResponseEntity<Dto> updateOne(@RequestBody Dto dto) {
         try {
             return ResponseEntity.ok(service.updateOne(dto, dto.getId()));
@@ -58,7 +48,6 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
     }
 
     @DeleteMapping("{id}")
-    @Cacheable(value = "findById", key = "#root.target.getClass().getName()-#id")
     public ResponseEntity<Dto> deleteOne(@PathVariable ID id) {
         try {
             return ResponseEntity.ok(service.deleteOne(id));

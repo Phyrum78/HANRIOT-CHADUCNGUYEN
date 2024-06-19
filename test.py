@@ -3,7 +3,7 @@ import requests
 from faker import Faker
 fake = Faker()
 BASE_URL = "http://localhost:8081"
-
+created_user_id=0
 def test_get_all_users():
     response = requests.get(f"{BASE_URL}/users")
     assert response.status_code == 200
@@ -21,14 +21,14 @@ def test_create_user():
     }
     response = requests.post(f"{BASE_URL}/users", json=user_data)
     assert response.status_code == 200
+    pytest.created_user_id=response.json()["id"]
 
-
+@pytest.mark.dependency(depends=["test_create_user"])
 def test_get_user_by_id():
-    created_user_id = test_create_user()
-    response = requests.get(f"{BASE_URL}/users/{created_user_id}")
+    response = requests.get(f"{BASE_URL}/users/{pytest.created_user_id}")
     assert response.status_code == 200
     user = response.json()
-    assert user["id"] == created_user_id
+    assert user["id"] == pytest.created_user_id
 
 # def test_update_user():
 #     created_user_id = test_create_user()
