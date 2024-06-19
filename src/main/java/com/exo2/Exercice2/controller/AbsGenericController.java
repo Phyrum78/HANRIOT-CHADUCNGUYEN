@@ -29,8 +29,8 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
         return ResponseEntity.ok(service.findAll(pageable));
     }
 
-    @GetMapping("/{id}")
-    @Cacheable(value = "findById", key = "#root.target.getClass().getName()-#id")
+    @GetMapping("{id}")
+    @Cacheable(value = "findById", key = "#root.target.getClass().getName() + '#id'")
     public ResponseEntity<Dto> findOneById(@PathVariable ID id) {
         try {
             return ResponseEntity.ok(service.findOne(id));

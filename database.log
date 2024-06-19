@@ -383,3 +383,59 @@
 1718791159597|7|commit|
 1718791159623|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
 1718791159626|2|commit|
+1718796071644|6|statement|select * from information_schema.sequences
+1718796071687|18|statement|create table party (party_id bigserial not null, date timestamp(6), description varchar(255), is_paid boolean not null, location varchar(255), max_participants integer not null, name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718796071713|1|statement|select * from "public"."utilisateur" where 1=0
+1718796071724|1|statement|select * from "public"."utilisateur" where 1=0
+1718796223408|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718796223429|1|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718796223435|1|commit|
+1718796223476|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
+1718796223488|3|commit|
+1718796223500|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
+1718796223503|2|commit|
+1718796223702|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
+1718796223710|6|commit|
+1718796223733|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
+1718796223736|2|commit|
+1718796274517|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (38,'Carterview','rachelscott@example.com','his, others, way','C&go8HvvDp','Texas')
+1718796274525|7|commit|
+1718796274534|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (65,'New Heather','hickmanerin@example.net','film, beyond, work','14Q4Rpwz^4','Pennsylvania')
+1718796274537|2|commit|
+1718796274547|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (21,'East Dylanland','matthewsjames@example.net','card, training, more','CW(FpDws%8','Washington')
+1718796274550|2|commit|
+1718796274559|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (55,'New Janetton','dlittle@example.com','view, base, weight','fJ6CKYa!%v','Kentucky')
+1718796274563|2|commit|
+1718796274571|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (27,'Robertsmouth','hogannathaniel@example.org','yourself, bit, pattern','6YPsU3(q&k','Delaware')
+1718796274574|2|commit|
+1718796274584|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (42,'North Josephtown','clewis@example.com','sell, help, born','!W%0!J7up8','Massachusetts')
+1718796274587|2|commit|
+1718796274595|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (45,'Danielland','bthomas@example.org','require, more, particularly','R7fBdwGuL#','Wyoming')
+1718796274599|2|commit|
+1718796274607|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (32,'Lake Diane','hdavis@example.net','simple, child, specific',')KNO9dSki7','Florida')
+1718796274609|2|commit|
+1718796274618|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (18,'Danielborough','nicolefisher@example.net','character, grow, make','iR7VyXag%U','Delaware')
+1718796274621|2|commit|
+1718796274630|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (48,'North Lauraborough','vcantrell@example.org','though, under, meeting','+j^0dyQo(2','Maine')
+1718796274632|2|commit|
+1718796336293|5|statement|select * from information_schema.sequences
+1718796336341|1|statement|select * from "public"."utilisateur" where 1=0
+1718796336351|1|statement|select * from "public"."utilisateur" where 1=0
+1718796342672|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718796342699|1|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718796342704|1|commit|
+1718796342825|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
+1718796342841|7|commit|
+1718796342853|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New York','test@example.com','coding, reading','password123','NY')
+1718796342856|2|commit|
+1718796429852|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (37,'South Martin','taylortimothy@example.org','something, security, look','O584Ttfv%r','Kansas')
+1718796429860|7|commit|
+1718796429871|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (52,'Aprilburgh','jasminehurst@example.com','reach, television, produce','*bye5FMycs','Missouri')
+1718796429875|2|commit|
+1718796457709|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (63,'Jessehaven','sarah38@example.net','western, painting, scientist','xP1ZlUwMQ^','Maine')
+1718796457717|7|commit|
+1718796457726|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (60,'North Christopherview','nicholashobbs@example.net','study, own, energy','!TiGhyc_X3','Minnesota')
+1718796457730|2|commit|
+1718797662437|5|statement|select * from information_schema.sequences
+1718797662473|1|statement|select * from "public"."utilisateur" where 1=0
+1718797662482|1|statement|select * from "public"."utilisateur" where 1=0
