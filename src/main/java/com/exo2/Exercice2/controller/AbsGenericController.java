@@ -47,7 +47,7 @@ public abstract class AbsGenericController<Dto extends AbsDto<ID>, Entity, ID, R
 
     @PutMapping
     @Caching(evict = {@CacheEvict(cacheNames = "#root.target.getClass().getName() + '*'", allEntries = true),
-    }, put = @CachePut(value = "findById", key = "#root.target.getClass().getName()-#dto.id")
+    }, put = @CachePut(value = "findById", key = "#root.target.getClass().getName() + '#id'")
     )
     public ResponseEntity<Dto> updateOne(@RequestBody Dto dto) {
         try {

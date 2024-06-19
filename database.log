@@ -439,3 +439,28 @@
 1718797662437|5|statement|select * from information_schema.sequences
 1718797662473|1|statement|select * from "public"."utilisateur" where 1=0
 1718797662482|1|statement|select * from "public"."utilisateur" where 1=0
+1718797753126|6|statement|select * from information_schema.sequences
+1718797753180|1|statement|select * from "public"."utilisateur" where 1=0
+1718797753193|1|statement|select * from "public"."utilisateur" where 1=0
+1718797759091|3|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=1
+1718797759093|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (21,'Shawfurt','valenciadarlene@example.org','coach, air, mother','V)tn3Zidhh','Wyoming')
+1718797759102|1|commit|
+1718797759118|7|commit|
+1718797759143|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (44,'Jacquelinefort','ukramer@example.net','view, still, husband','n@0cPK%qGD','Nebraska')
+1718797759146|2|commit|
+1718797759161|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (24,'Johnsonberg','carloshall@example.com','position, factor, Democrat','WxC*Gduc+2','Minnesota')
+1718797759165|2|commit|
+1718797759179|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (40,'Campbellshire','luis07@example.org','nearly, purpose, real','*0&qFKt69q','Mississippi')
+1718797759182|3|commit|
+1718797759195|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (21,'North Edwinmouth','johnsmith@example.com','not, several, system','$8AXOe6#K0','New Jersey')
+1718797759198|2|commit|
+1718797759209|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (52,'Port David','susan74@example.com','rich, choice, process','+U9IR6Xq4+','Washington')
+1718797759212|2|commit|
+1718797759223|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (23,'Kennethshire','randallbolton@example.org','sometimes, while, defense','p&0ErvYk35','Indiana')
+1718797759227|3|commit|
+1718797759238|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (25,'North Timothy','ufischer@example.net','leg, with, system','s)(3RZrtNq','South Carolina')
+1718797759240|2|commit|
+1718797759251|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (61,'Kristineland','bphillips@example.net','draw, available, base','Gk5*AmrD_c','Montana')
+1718797759254|2|commit|
+1718797759264|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (34,'West Jessicaborough','jlarsen@example.net','explain, record, billion','I9aGcFfE#*','California')
+1718797759269|3|commit|
