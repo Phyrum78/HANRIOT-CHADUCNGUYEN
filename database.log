@@ -35,3 +35,11 @@
 1718291425365|0|statement|insert into projet (nom_projet) values ('MyParty')
 1718291425392|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (5,5)
 1718291425394|0|commit|
+1718788642533|8|statement|select * from information_schema.sequences
+1718788642583|20|statement|create table review (review_id bigserial not null, comment TEXT, rating integer not null, reviewer_id bigint not null, user_id bigint not null, primary key (review_id))
+1718788642597|12|statement|create table utilisateur (utilisateur_id bigserial not null, age integer not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718788642603|4|statement|alter table if exists review add constraint FKgdpv40nq56fm3eb6fl0ld3wce foreign key (reviewer_id) references utilisateur
+1718788642607|3|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718788684930|9|statement|select * from information_schema.sequences
+1718788684992|1|statement|select * from "public"."utilisateur" where 1=0
+1718788685006|1|statement|select * from "public"."utilisateur" where 1=0
