@@ -636,3 +636,1001 @@
 1718801261329|7|commit|
 1718801261340|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=124
 1718801261342|1|commit|
+1718802527854|25|statement|select * from information_schema.sequences
+1718802527969|2|statement|select * from "public"."utilisateur" where 1=0
+1718802527979|1|statement|select * from "public"."utilisateur" where 1=0
+1718802559655|6|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718802559686|3|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718802559693|2|commit|
+1718802561831|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718802561835|2|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718802561837|1|commit|
+1718802567717|4|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718802567719|1|commit|
+1718802574300|4|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802574309|3|statement|select count(p1_0.party_id) from party p1_0
+1718802574310|1|commit|
+1718802585366|10|statement|insert into utilisateur (age,city,email,interests,password,region) values (51,'Leeshire','davidmiller@example.org','dinner, beat, entire','$ucTwgzD!0','Arizona')
+1718802585393|12|commit|
+1718802585404|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (24,'South Debraville','brianhernandez@example.net','idea, painting, program','dBlR$5Hpk7','Virginia')
+1718802585407|2|commit|
+1718802585417|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (43,'Arthurview','jlewis@example.com','seven, participant, research','u9OuRBhr_A','Rhode Island')
+1718802585420|2|commit|
+1718802585429|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (49,'Marshallville','jessicabates@example.com','want, skin, debate','vR4yP2bG*u','Tennessee')
+1718802585432|2|commit|
+1718802585442|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (20,'Taratown','wagnerandrew@example.com','yet, meeting, relate','*6*8wMu5P$','Maryland')
+1718802585446|3|commit|
+1718802585456|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (22,'Melissahaven','qcollins@example.org','well, here, woman','WJ2VhOpqA!','Michigan')
+1718802585460|3|commit|
+1718802585470|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (35,'Derrickmouth','kristamorris@example.org','these, movie, option','0bSDQroX^k','Kentucky')
+1718802585473|2|commit|
+1718802585482|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (61,'Olsonbury','coopervictoria@example.com','people, arrive, sign',')0Pfj#qqvb','Kentucky')
+1718802585486|2|commit|
+1718802585495|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (60,'Markberg','erica52@example.org','perhaps, government, find','TAnz6Rmke)','Kansas')
+1718802585498|2|commit|
+1718802585507|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (36,'Christineshire','morrisjames@example.net','third, yard, quality','K7+84)Nbv$','Kentucky')
+1718802585510|2|commit|
+1718802585530|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-04-26T17:09:45.512+0200','Health no inside career force challenge listen teach. Western say study process. Can left list item hot product.',false,'6975 Grace Gardens Apt. 191 Emilymouth, OR 32298',254,'Team-oriented non-volatile success','CLASSIC')
+1718802585533|2|commit|
+1718802585548|1|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-10-26T17:09:45.540+0200','Travel where three trouble. Every painting last human six run food business. Hand need summer conference while. Receive increase paper answer.',false,'079 Brittany Inlet Port Jordan, RI 32771',186,'Polarized bottom-line database','CLASSIC')
+1718802585550|2|commit|
+1718802585559|1|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-12-11T16:09:45.552+0100','Instead religious live all try voice PM new. Show else left room space adult sea. Factor once note amount education thank by report. Away within fine ability realize our.',false,'29837 Richard Flats Apt. 103 Daltonland, FM 37759',492,'Phased context-sensitive system engine','CLASSIC')
+1718802585561|1|commit|
+1718802585571|1|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-25T16:09:45.564+0100','Usually position name most glass score. Center analysis even concern author shoulder less hear. Discover world person result high money enjoy. Sometimes church wind unit Mrs.',false,'630 Maureen Cape Suite 049 East Kristy, NH 78875',396,'Quality-focused contextually-based open architecture','CLASSIC')
+1718802585573|1|commit|
+1718802585585|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-05-12T17:09:45.576+0200','Mother tell none moment argue. Bank attorney whatever free everything. Ten such day. Down anyone successful on herself contain face. Entire successful within agreement push Mr north sit.',false,'6514 Potts Spring Suite 698 West Robertberg, MD 69910',417,'Function-based grid-enabled knowledge user','CLASSIC')
+1718802585587|1|commit|
+1718802585597|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-17T16:09:45.590+0100','Car soldier knowledge teach wait product exactly. Each while hold remain.',false,'902 Catherine Square Sydneyshire, NM 96380',310,'Quality-focused interactive support','CLASSIC')
+1718802585599|1|commit|
+1718802585609|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-07-12T17:09:45.602+0200','Cell visit word choice customer. Quite technology let sea. Begin discover sport moment wall. Air various evidence care like. Her open cause. Leader collection letter total pressure while.',false,'94547 Katelyn Drives Kevinview, NM 69410',377,'Managed national standardization','CLASSIC')
+1718802585611|1|commit|
+1718802585622|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-10T16:09:45.614+0100','Someone commercial believe. Write certain really company seven anything. Compare serve center. Effect national suddenly believe take food together. Heart entire pressure perhaps throughout activity.',false,'40720 Morgan Station South Kellybury, NE 74986',487,'De-engineered mission-critical emulation','CLASSIC')
+1718802585624|1|commit|
+1718802585633|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-11-20T16:09:45.627+0100','Read case although thus. Major where return thing officer they management.',false,'525 Jennifer Ridge Limouth, KS 21260',478,'Multi-channeled mobile middleware','CLASSIC')
+1718802585635|1|commit|
+1718802585644|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-24T16:09:45.637+0100','Will view government ready. Far politics size owner after wide report. Hotel paper fly myself officer bar.',false,'PSC 0329, Box 1708 APO AP 58094',419,'Multi-channeled 24hour instruction set','CLASSIC')
+1718802585646|1|commit|
+1718802585657|0|rollback|
+1718802585689|0|rollback|
+1718802585699|0|rollback|
+1718802585708|0|rollback|
+1718802585716|0|rollback|
+1718802585725|0|rollback|
+1718802585734|0|rollback|
+1718802585742|0|rollback|
+1718802585751|0|rollback|
+1718802585759|0|rollback|
+1718802589495|1|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802589499|1|statement|select count(p1_0.party_id) from party p1_0
+1718802589500|0|commit|
+1718802590171|1|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802590175|2|statement|select count(p1_0.party_id) from party p1_0
+1718802590178|1|commit|
+1718802590326|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802590329|1|statement|select count(p1_0.party_id) from party p1_0
+1718802590331|1|commit|
+1718802590472|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802590476|1|statement|select count(p1_0.party_id) from party p1_0
+1718802590477|0|commit|
+1718802590614|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802590617|1|statement|select count(p1_0.party_id) from party p1_0
+1718802590620|1|commit|
+1718802590749|1|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802590753|1|statement|select count(p1_0.party_id) from party p1_0
+1718802590754|1|commit|
+1718802594182|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718802594184|1|commit|
+1718802598174|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802598180|3|statement|select count(p1_0.party_id) from party p1_0
+1718802598182|1|commit|
+1718802632280|12|statement|select * from information_schema.sequences
+1718802632331|1|statement|select * from "public"."utilisateur" where 1=0
+1718802632340|1|statement|select * from "public"."utilisateur" where 1=0
+1718802635473|3|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802635495|2|statement|select count(p1_0.party_id) from party p1_0
+1718802635499|1|commit|
+1718802637893|1|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718802637896|1|statement|select count(p1_0.party_id) from party p1_0
+1718802637897|0|commit|
+1718802643117|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718802643119|1|commit|
+1718803250013|23|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718803250040|5|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718803250042|1|commit|
+1718868240444|21|statement|select * from information_schema.sequences
+1718868240510|3|statement|select * from "public"."utilisateur" where 1=0
+1718868240525|2|statement|select * from "public"."utilisateur" where 1=0
+1718868367646|23|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718868367727|9|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718868367742|4|commit|
+1718868404734|10|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718868404746|3|statement|select count(p1_0.party_id) from party p1_0
+1718868404750|2|commit|
+1718868433932|6|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718868433937|3|commit|
+1718868650852|37|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718868650902|8|statement|select count(p1_0.party_id) from party p1_0
+1718868650908|2|commit|
+1718870958052|21|statement|select * from information_schema.sequences
+1718870958123|2|statement|select * from "public"."utilisateur" where 1=0
+1718870958133|0|statement|select * from "public"."utilisateur" where 1=0
+1718871057133|20|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718871057186|7|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718871057194|3|commit|
+1718871061308|13|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718871061316|2|statement|select count(p1_0.party_id) from party p1_0
+1718871061318|1|commit|
+1718871179198|24|statement|insert into utilisateur (age,city,email,interests,password,region) values (35,'East Kimberlyville','kevinmata@example.org','even, key, suddenly','#UF6K@up1J','North Carolina')
+1718871179240|8|commit|
+1718871179266|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (23,'Rodriguezport','mberry@example.org','piece, maybe, able','#2xGCeTTyh','Oklahoma')
+1718871179269|2|commit|
+1718871179279|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (65,'Port Michael','don91@example.net','try, fund, human','W^F1^kMJ(t','New Mexico')
+1718871179282|2|commit|
+1718871179290|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (45,'South Dustinmouth','robinsonchristopher@example.org','fund, mean, more','L$1iUiHzfk','Vermont')
+1718871179293|2|commit|
+1718871179304|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (61,'Cathybury','dylan83@example.org','sign, fast, than','F09q@Nt8%P','New York')
+1718871179306|1|commit|
+1718871179315|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (46,'Johnsonport','tabithadiaz@example.org','space, throw, box','59ZRznvn+s','New Hampshire')
+1718871179318|1|commit|
+1718871179326|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (54,'Lake Nicholasshire','bdavis@example.org','bill, deep, pattern','_!W0A7Db6U','Indiana')
+1718871179329|2|commit|
+1718871179337|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (29,'North Tylerbury','smithalbert@example.org','every, attention, service','r2CZ7BSd%S','Delaware')
+1718871179339|1|commit|
+1718871179348|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (57,'East Ann','cellis@example.com','herself, everything, wonder','4+$*2)lpyU','Virginia')
+1718871179350|1|commit|
+1718871179358|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (20,'North Christina','michael53@example.net','weight, across, see','F1RfJdNr)O','Minnesota')
+1718871179362|1|commit|
+1718871179397|8|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-25T11:12:59.364+0100','Simply heart also how increase. Possible senior another center issue scientist. Future change production truth future chance agent.',false,'8924 Melissa Vista Suite 811 South Julie, IL 17245',241,'Innovative responsive open architecture','CLASSIC')
+1718871179400|2|commit|
+1718871179420|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-05T11:12:59.412+0100','Send performance offer should fill single. Play road art get. Level fish page natural. South growth order course. Bed argue economic low list. Force policy machine reveal. Police campaign near with.',false,'929 William Causeway Ashleyland, RI 96210',9,'Organized impactful strategy','CLASSIC')
+1718871179423|2|commit|
+1718871179434|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-28T11:12:59.427+0100','Occur director a laugh. Score term industry country. As personal glass improve amount. Much leg write father. Reach over us.',false,'PSC 7689, Box 6204 APO AE 19368',184,'Triple-buffered well-modulated secured line','CLASSIC')
+1718871179436|1|commit|
+1718871179446|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-04-21T12:12:59.439+0200','Lot pretty everybody fear enough reason. Bring nothing nothing region discussion or south. Personal environmental turn choice clearly investment movement. Possible either process owner.',false,'17271 Butler Squares New Angelaberg, OH 90165',7,'Automated human-resource model','CLASSIC')
+1718871179449|1|commit|
+1718871179462|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-01-06T11:12:59.452+0100','Season knowledge daughter mind pretty another. Themselves water nation tough summer form animal. Time method owner base stage generation plant own. Arrive even run explain adult avoid.',false,'93930 Williams Parkways Suite 016 Maryhaven, PW 92419',313,'Horizontal composite implementation','CLASSIC')
+1718871179464|1|commit|
+1718871179479|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-06-11T12:12:59.468+0200','Far send well family short others structure. Pm information deal education. Choose less open include too anyone office. Class agent just prove million animal. Probably hair decide opportunity.',false,'245 Rogers Burg Apt. 821 New Dennisside, FL 41404',182,'Vision-oriented even-keeled capability','CLASSIC')
+1718871179482|2|commit|
+1718871179497|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-10-22T12:12:59.485+0200','Staff trip staff model threat performance. Note star green effort. Detail cold song cup successful relate. Each check statement sometimes head police pull.',false,'08715 Rose Lake Suite 068 New Claudiahaven, IL 61853',413,'Organized asynchronous initiative','CLASSIC')
+1718871179500|2|commit|
+1718871179514|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-11-24T11:12:59.503+0100','Also go listen foot center arm. Poor threat lawyer. Camera recognize cell message sense already focus. Indeed difficult girl election address. Inside assume science seem chair.',false,'30951 Davis Coves Suite 679 Duffychester, NE 06730',101,'De-engineered mission-critical middleware','CLASSIC')
+1718871179516|1|commit|
+1718871179529|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-12-15T11:12:59.519+0100','Week from safe on stock traditional born up. Enough become laugh word consider ground. Every college performance last daughter worry. Report least push. Prevent society benefit care between.',false,'05918 Franklin Mills Port Todd, DC 87809',276,'Innovative 3rdgeneration extranet','CLASSIC')
+1718871179531|2|commit|
+1718871179544|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-27T11:12:59.534+0100','Customer shake her including door catch and. Senior I wonder. Respond measure hold beautiful than pressure possible. Force increase concern generation rest happy fund.',false,'50445 Parker Corner Paulmouth, WA 54841',345,'Triple-buffered 24hour Local Area Network','CLASSIC')
+1718871179547|1|commit|
+1718871179574|0|rollback|
+1718871179660|0|rollback|
+1718871179669|0|rollback|
+1718871179680|0|rollback|
+1718871179692|0|rollback|
+1718871179703|0|rollback|
+1718871179716|0|rollback|
+1718871179728|0|rollback|
+1718871179738|0|rollback|
+1718871179749|0|rollback|
+1718871311245|20|statement|select * from information_schema.sequences
+1718871311317|2|statement|select * from "public"."utilisateur" where 1=0
+1718871311328|1|statement|select * from "public"."utilisateur" where 1=0
+1718871414194|4|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718871414223|3|statement|select count(p1_0.party_id) from party p1_0
+1718871414228|1|commit|
+1718871437706|11|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718871437712|3|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718871437715|2|commit|
+1718871444534|4|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718871444537|1|commit|
+1718871942285|18|statement|select * from information_schema.sequences
+1718871942371|1|statement|select * from "public"."utilisateur" where 1=0
+1718871942382|1|statement|select * from "public"."utilisateur" where 1=0
+1718871948555|6|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718871948585|3|statement|select count(p1_0.party_id) from party p1_0
+1718871948591|3|commit|
+1718871977860|7|statement|select * from information_schema.sequences
+1718871977906|1|statement|select * from "public"."utilisateur" where 1=0
+1718871977915|1|statement|select * from "public"."utilisateur" where 1=0
+1718872002131|3|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718872002162|2|statement|select count(p1_0.party_id) from party p1_0
+1718872002168|2|commit|
+1718872003987|4|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718872003989|1|commit|
+1718872039962|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718872039965|2|commit|
+1718872072280|125|statement|select * from information_schema.sequences
+1718872072518|5|statement|select * from "public"."utilisateur" where 1=0
+1718872072548|12|statement|select * from "public"."utilisateur" where 1=0
+1718872079383|4|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718872079410|2|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718872079417|2|commit|
+1718872086912|3|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718872086918|2|statement|select count(p1_0.party_id) from party p1_0
+1718872086920|1|commit|
+1718872093228|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718872093229|1|commit|
+1718874237183|30|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718874237221|7|statement|select count(p1_0.party_id) from party p1_0
+1718874237225|1|commit|
+1718874501172|14|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718874501184|3|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718874501187|1|commit|
+1718875019613|38|statement|insert into utilisateur (age,city,email,interests,password,region) values (53,'New Maureen','jessica22@example.com','style, expert, able','S0f&BlGL(T','Maine')
+1718875019674|23|commit|
+1718875019705|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (20,'New Pamela','myersadam@example.com','billion, bar, glass','HSc^15VuyC','Utah')
+1718875019709|3|commit|
+1718875019724|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (32,'Jameschester','brad91@example.com','class, above, film','_rv6JHb)$0','Florida')
+1718875019728|3|commit|
+1718875019744|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (53,'Lake William','daniel94@example.org','letter, race, reach','!hE1QWdna%','Texas')
+1718875019748|4|commit|
+1718875019763|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (26,'Lake Maryberg','danieldavis@example.com','agency, tend, cup','#w05SRiZ_6','Mississippi')
+1718875019766|3|commit|
+1718875019779|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (22,'Whitakermouth','walkergina@example.com','inside, wall, already',')9OkW!MSTg','Oklahoma')
+1718875019785|3|commit|
+1718875019794|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (61,'Robertsfurt','derek70@example.net','billion, daughter, culture','^1sFH8T^f)','Maine')
+1718875019798|3|commit|
+1718875019809|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (40,'South Susan','sullivankevin@example.com','treat, develop, do','YgpSNgwY+1','Minnesota')
+1718875019812|2|commit|
+1718875019825|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (40,'East Tylerfort','kclark@example.net','must, answer, agency','3n(UhXd6^5','Georgia')
+1718875019828|2|commit|
+1718875019840|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (21,'South Ashleyview','pwilson@example.com','oil, during, Democrat','ZH4ZUJvn%$','Massachusetts')
+1718875019843|3|commit|
+1718875019900|15|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-07-21T13:16:59.845+0200','Product central word good account bed. His control similar next notice sense foot. Phone common memory though word. Skill forward war. Produce late expect should mention together often risk.',false,'7755 Banks Port Port Sandra, NE 65512',266,'Seamless zero tolerance firmware','CLASSIC')
+1718875019905|3|commit|
+1718875019931|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-12T12:16:59.921+0100','Woman those play out difficult or difficult. Large ahead however poor. To upon young speech camera scientist. Blue never cut right production.',false,'601 Mackenzie Curve Suite 246 Port Ericahaven, CT 13006',329,'Sharable didactic hardware','CLASSIC')
+1718875019936|4|commit|
+1718875019954|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-11-24T12:16:59.940+0100','Contain process day claim past example parent hit. Cold somebody recognize. Like become every. Bar improve step she. Member standard herself.',false,'058 Holt Pines Richardsonton, ME 68032',318,'Front-line scalable attitude','CLASSIC')
+1718875019958|2|commit|
+1718875019973|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-09-26T13:16:59.962+0200','Catch share who from reduce million stage. Which present detail tax. Meet hand miss a pretty success. Population about green adult back blood apply. Yes owner fly assume actually.',false,'674 Taylor River Apt. 075 West Jerryshire, PW 47376',172,'Fully-configurable optimizing structure','CLASSIC')
+1718875019976|2|commit|
+1718875020006|15|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-06-24T13:16:59.980+0200','He about our food environmental individual billion. There together so who. Soon have after particular should he. Part answer also all.',false,'06472 Mallory Plain Apt. 027 Lake Teresaside, ND 88973',487,'Operative composite solution','CLASSIC')
+1718875020012|5|commit|
+1718875020038|8|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-09-25T13:17:00.020+0200','Standard help language herself phone national low fund. Week charge dark until building upon. Economy it floor relate structure.',false,'0947 Amy Parks Craigberg, TX 92753',466,'Organic directional Graphical User Interface','CLASSIC')
+1718875020043|3|commit|
+1718875020059|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-10-24T13:17:00.046+0200','Effort yourself war that new section son. Walk operation town face never. Culture lose along. Prepare trip thought sing available. During network inside. Imagine call above next pressure green blue.',false,'8625 Murphy Union Apt. 554 New Kelly, AR 90476',257,'Automated web-enabled matrices','CLASSIC')
+1718875020062|1|commit|
+1718875020079|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-12-23T12:17:00.068+0100','Car wear move all. Word record job Republican. Throughout environment become thus market.',false,'PSC 8986, Box 6062 APO AA 19056',96,'Persistent reciprocal standardization','CLASSIC')
+1718875020082|2|commit|
+1718875020096|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-15T12:17:00.086+0100','Surface represent whole gas may. Discover thank both south minute. Arrive economic consider create pick station also.',false,'58840 Daniel Street Suite 035 Port Michaelland, OR 21320',349,'Persistent attitude-oriented capacity','CLASSIC')
+1718875020099|2|commit|
+1718875020115|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-07T12:17:00.104+0100','Wide offer summer thing whom thus. Operation two home quickly light without. Outside bed inside meet strategy. Natural level order.',false,'4608 Campbell Pass Apt. 970 Josemouth, IN 80028',377,'Multi-tiered foreground ability','CLASSIC')
+1718875020120|2|commit|
+1718875020161|0|rollback|
+1718875020330|0|rollback|
+1718875020345|0|rollback|
+1718875020365|0|rollback|
+1718875020387|0|rollback|
+1718875020410|0|rollback|
+1718875020423|0|rollback|
+1718875020435|0|rollback|
+1718875020448|0|rollback|
+1718875020459|0|rollback|
+1718875048431|9|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718875048446|6|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718875048452|2|commit|
+1718875056808|5|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875056818|3|statement|select count(p1_0.party_id) from party p1_0
+1718875056821|3|commit|
+1718875066490|8|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718875066493|2|commit|
+1718875087641|5|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-06-20T11:18:01.293+0200','string',true,'string',0,'string','CLASSIC')
+1718875087646|3|commit|
+1718875089238|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-06-20T11:18:01.293+0200','string',true,'string',0,'string','CLASSIC')
+1718875089242|3|commit|
+1718875119448|7|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 where p1_0.party_id=92
+1718875119456|2|commit|
+1718875148235|3|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875148243|2|statement|select count(p1_0.party_id) from party p1_0
+1718875148245|1|commit|
+1718875151033|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875151040|2|statement|select count(p1_0.party_id) from party p1_0
+1718875151043|2|commit|
+1718875151718|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875151829|1|statement|select count(p1_0.party_id) from party p1_0
+1718875151832|1|commit|
+1718875151887|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875151893|2|statement|select count(p1_0.party_id) from party p1_0
+1718875151895|1|commit|
+1718875152030|1|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875152035|1|statement|select count(p1_0.party_id) from party p1_0
+1718875152039|1|commit|
+1718875581729|24|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718875581754|6|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718875581757|2|commit|
+1718875594361|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 100 rows only
+1718875594401|2|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718875594403|1|commit|
+1718875638651|9|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 200 rows only
+1718875638664|2|commit|
+1718875661343|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718875661345|1|commit|
+1718875675526|6|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875675538|6|statement|select count(p1_0.party_id) from party p1_0
+1718875675540|1|commit|
+1718875729946|21|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-06-20T11:28:45.564+0200','string',true,'string',0,'string','CLASSIC')
+1718875729958|6|commit|
+1718875732736|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-06-20T11:28:45.564+0200','string',true,'string',0,'string','CLASSIC')
+1718875732738|1|commit|
+1718875743513|7|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 where p1_0.party_id=94
+1718875743515|1|commit|
+1718875745383|1|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 where p1_0.party_id=94
+1718875745385|1|commit|
+1718875757019|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875757022|1|statement|select count(p1_0.party_id) from party p1_0
+1718875757025|1|commit|
+1718875766407|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 100 rows only
+1718875766433|2|commit|
+1718875892167|45|statement|select * from information_schema.sequences
+1718875892304|56|statement|create table party (party_id bigserial not null, date timestamp(6), description varchar(255), is_paid boolean not null, location varchar(255), max_participants integer not null, name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718875892318|13|statement|create table review (review_id bigserial not null, comment TEXT, rating integer not null, reviewer_id bigint not null, user_id bigint not null, primary key (review_id))
+1718875892329|10|statement|create table utilisateur (utilisateur_id bigserial not null, age integer not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718875892337|8|statement|create index idx_party_location on party (party_id)
+1718875892350|10|statement|alter table if exists review add constraint FKgdpv40nq56fm3eb6fl0ld3wce foreign key (reviewer_id) references utilisateur
+1718875892353|3|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718875899055|5|statement|insert into utilisateur (age,city,email,interests,password,region) values (62,'Jonesfort','gjones@example.net','wear, east, hope','t+3C0Ld(Gh','Wyoming')
+1718875899071|3|commit|
+1718875899108|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (52,'South Carol','ugonzalez@example.org','whether, reality, central','88TH#Jlq%F','Hawaii')
+1718875899111|2|commit|
+1718875899119|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (60,'New Barbara','barnettscott@example.org','sell, stuff, may','Zj3#EP9q%f','Louisiana')
+1718875899121|1|commit|
+1718875899130|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (23,'East John','alexisevans@example.org','drop, thing, a','p52V!r7y%R','Arkansas')
+1718875899132|1|commit|
+1718875899141|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (27,'Archerton','probinson@example.com','if, keep, student','$_Ft8sEaz(','New Jersey')
+1718875899144|1|commit|
+1718875899154|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (53,'North Joseph','leongeorge@example.net','during, tough, increase','k_6XRaVfO*','Oregon')
+1718875899158|2|commit|
+1718875899166|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (47,'North Amanda','omar26@example.org','despite, try, likely','#OId2Eh@5x','Washington')
+1718875899167|1|commit|
+1718875899175|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (40,'Gonzalezhaven','ryan18@example.net','score, operation, politics','9zut7I*nm)','Florida')
+1718875899179|1|commit|
+1718875899186|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (62,'Julieside','webbrobin@example.net','animal, lose, else','$439KfqtlZ','New Jersey')
+1718875899188|1|commit|
+1718875899197|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (60,'North Josephhaven','vburton@example.org','account, light, hundred','w2ca7@Nk!@','Florida')
+1718875899200|2|commit|
+1718875899218|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-08-01T13:31:39.202+0200','Single her Republican sit wonder beyond. Ago vote how although seat.',false,'24257 Rodney Parks Suite 922 Melendezshire, AK 04708',251,'Open-source global core','CLASSIC')
+1718875899221|2|commit|
+1718875899238|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-22T12:31:39.229+0100','Particular subject direction if over she. Pressure receive social maybe. Another simply industry bank forward sign.',false,'83909 Sydney Terrace Apt. 542 Shawnmouth, ME 52172',191,'Centralized 24hour task-force','CLASSIC')
+1718875899241|2|commit|
+1718875899262|13|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-01-03T12:31:39.244+0100','Color deep bill contain add them less feel. It toward election religious argue one others shake. Law watch Democrat. Institution citizen company window marriage for low region.',false,'41519 Michael Lane Lake Daniel, CT 26441',361,'Phased zero administration solution','CLASSIC')
+1718875899264|2|commit|
+1718875899275|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-05-17T13:31:39.267+0200','Tell late up different product church sit let. Hundred personal miss condition. Practice see message mean heart.',false,'9388 Miranda Brook South Amanda, AR 41064',475,'Open-source hybrid frame','CLASSIC')
+1718875899278|2|commit|
+1718875899288|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-01T12:31:39.280+0100','Husband really discuss people everybody. Official thank miss cell night everything. Himself most per relationship.',false,'243 Adam Well Apt. 594 Donaldsonberg, WA 42017',490,'Ergonomic actuating system engine','CLASSIC')
+1718875899291|2|commit|
+1718875899302|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-04-02T13:31:39.294+0200','Make consider thus guess business receive. Star many price give. Check million message next drop. Put teach rest including tell. Vote skill in somebody. Trip attention a alone north win.',false,'799 Courtney Islands Suite 859 West Justin, MH 27790',143,'Grass-roots fresh-thinking support','CLASSIC')
+1718875899304|1|commit|
+1718875899315|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-06-15T13:31:39.308+0200','Hour throughout cultural manager air my. Shoulder matter response hair. Defense power election sister inside from. Impact question stock soldier religious before exactly.',false,'88577 Samuel Crossing New John, TX 44093',238,'Persevering fault-tolerant encryption','CLASSIC')
+1718875899318|1|commit|
+1718875899329|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-04-30T13:31:39.320+0200','Stock water attention bring media be. Argue stand use east whole true reality.',false,'4852 Michael Drive Lake Deborah, PW 79992',454,'Enhanced holistic synergy','CLASSIC')
+1718875899331|1|commit|
+1718875899342|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-02-02T12:31:39.333+0100','Party professor these. Particular Congress scientist experience energy. Risk teacher above section. Executive arm high what might social.',false,'296 French Orchard West Michaelborough, DC 32349',255,'Visionary user-facing framework','CLASSIC')
+1718875899344|1|commit|
+1718875899357|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-07-14T13:31:39.347+0200','Win back when expert or. Lay half morning suddenly. Return herself admit great against.',false,'06089 Dyer Terrace Christopherchester, NY 40582',480,'Face-to-face transitional support','CLASSIC')
+1718875899360|2|commit|
+1718875899371|0|rollback|
+1718875899410|0|rollback|
+1718875899419|0|rollback|
+1718875899428|0|rollback|
+1718875899440|0|rollback|
+1718875899448|0|rollback|
+1718875899457|0|rollback|
+1718875899464|0|rollback|
+1718875899476|0|rollback|
+1718875899488|0|rollback|
+1718875908432|4|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718875908457|3|statement|select count(p1_0.party_id) from party p1_0
+1718875908460|1|commit|
+1718875914090|3|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.reviewer_id,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718875914092|1|commit|
+1718875929084|0|rollback|
+1718875932831|0|rollback|
+1718875975427|100|statement|select * from information_schema.sequences
+1718875975624|2|statement|select * from "public"."utilisateur" where 1=0
+1718875975647|5|statement|select * from "public"."utilisateur" where 1=0
+1718875989026|0|rollback|
+1718876026242|0|rollback|
+1718876153134|0|rollback|
+1718876169868|20|statement|select * from information_schema.sequences
+1718876178150|14|statement|insert into review (comment,rating) values ('string',0)
+1718876178160|2|rollback|
+1718876215919|16|statement|insert into review (comment,rating) values ('string',0)
+1718876215936|2|rollback|
+1718876312809|18|statement|insert into utilisateur (age,city,email,interests,password,region) values (21,'Davisville','kenneth26@example.net','type, responsibility, some',')$8uFNa%qg','West Virginia')
+1718876312820|2|rollback|
+1718876328199|13|statement|select * from information_schema.sequences
+1718876328250|22|statement|create table party (party_id bigserial not null, date timestamp(6), description varchar(255), is_paid boolean not null, location varchar(255), max_participants integer not null, name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718876328258|7|statement|create table review (review_id bigserial not null, comment TEXT, rating integer not null, primary key (review_id))
+1718876328265|6|statement|create table utilisateur (utilisateur_id bigserial not null, age integer not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718876328270|4|statement|create index idx_party_location on party (party_id)
+1718876334448|4|statement|insert into utilisateur (age,city,email,interests,password,region) values (48,'Harperport','chrisrichmond@example.com','Congress, debate, production','$3uLILErJC','West Virginia')
+1718876334464|4|commit|
+1718876334503|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (29,'Cannonburgh','zbaker@example.net','talk, share, increase','^p8Uu1deZH','Tennessee')
+1718876334507|2|commit|
+1718876334517|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (39,'New Lindseyview','yray@example.net','west, sit, vote','^7+tUSRw$M','Kansas')
+1718876334519|1|commit|
+1718876334527|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (31,'Flemingtown','lisa51@example.org','behavior, almost, growth','*5VseL(kp3','Montana')
+1718876334531|3|commit|
+1718876334540|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (25,'Haysborough','prandall@example.com','officer, treatment, memory','7_J9JjWxrh','Georgia')
+1718876334543|2|commit|
+1718876334553|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (33,'North Wendy','jacob19@example.com','against, any, ball','C$Z^9GarYM','California')
+1718876334555|1|commit|
+1718876334565|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (34,'West Tina','emadden@example.com','letter, hear, pressure','4C884Rmm&)','California')
+1718876334567|2|commit|
+1718876334574|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (60,'Laurieborough','diane84@example.net','soon, direction, continue','&YKavFsAL2','Minnesota')
+1718876334577|1|commit|
+1718876334585|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (19,'Lake Candace','deckerjessica@example.net','choose, seven, under','+lt&3Alpjj','Maine')
+1718876334587|1|commit|
+1718876334595|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (62,'Joshuamouth','johnsonkeith@example.com','Democrat, increase, husband','_$PH(bv^W0','Pennsylvania')
+1718876334598|2|commit|
+1718876334615|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-03-10T12:38:54.600+0100','Space effect camera body sit what stop. Artist never leg heavy activity. Inside scene laugh score. Leg star budget industry view. Will table rather produce at.',false,'121 Steven Drive Apt. 322 East Christopher, DE 10001',248,'Profit-focused stable emulation','CLASSIC')
+1718876334617|2|commit|
+1718876334633|1|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-05-25T13:38:54.626+0200','Whole south mean clearly mouth sister describe. Size many scientist meet. Win town different.',false,'30470 Schwartz Fall Suite 784 New Jessica, NM 24751',94,'Assimilated human-resource interface','CLASSIC')
+1718876334635|1|commit|
+1718876334645|1|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-04-07T13:38:54.638+0200','Meeting send far. Score cause however vote town. Until improve raise dinner option visit.',false,'1162 Herrera Loop Port Paulamouth, IL 63276',403,'Persevering upward-trending knowledge user','CLASSIC')
+1718876334649|2|commit|
+1718876334659|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-09-20T13:38:54.652+0200','Cup still conference charge prevent game. Herself west middle forward trade how thus. Role heart scene make point forward hand perhaps. Fish send likely term what actually.',false,'85409 Crane Dale Lisamouth, MT 85391',284,'Inverse non-volatile core','CLASSIC')
+1718876334661|2|commit|
+1718876334674|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-09-03T13:38:54.665+0200','College citizen unit mention growth. Also produce agent region much toward these traditional. Institution option together successful. Police all why thus whose student lose.',false,'317 Anita Crossroad Jonesbury, ME 04153',337,'Re-engineered exuding pricing structure','CLASSIC')
+1718876334677|2|commit|
+1718876334690|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-10-09T13:38:54.681+0200','Create nation how threat get. Perform nearly later himself just point yet rate. All now eight sister many site. Imagine what down mind really many politics sell.',false,'10519 Karen Motorway Natashaburgh, GA 03556',193,'Front-line regional array','CLASSIC')
+1718876334693|1|commit|
+1718876334704|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-06-20T13:38:54.696+0200','As relate fear movie yeah. Become current range human. Start discussion among put property garden. Feel loss decide price talk garden ago. Kitchen hard indeed.',false,'31730 Stone Center South Bruce, HI 91702',325,'Profit-focused national array','CLASSIC')
+1718876334707|1|commit|
+1718876334719|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-09-09T13:38:54.710+0200','Last stop particularly feel control number. Others body admit community account eight. Must hundred budget everybody. Always and project student wife increase human call.',false,'6379 Thompson Forges Apt. 007 Martinchester, UT 08796',59,'Programmable tertiary Graphical User Interface','CLASSIC')
+1718876334721|1|commit|
+1718876334733|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2025-01-28T12:38:54.723+0100','Early try approach relationship bad pay church. Son avoid need feeling economy simple agent. Something eight wrong common.',false,'839 Kim Shores Apt. 849 North Jameschester, AS 93748',466,'Multi-layered fresh-thinking analyzer','CLASSIC')
+1718876334736|2|commit|
+1718876334751|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type) values ('2024-07-16T13:38:54.740+0200','Actually often American involve. Term guess issue none different might result little. Morning question measure move common pull bit. Outside article room nothing. Despite land sure.',false,'8653 Cody Parkway Suite 512 North Clintonborough, FL 16786',456,'Business-focused analyzing budgetary management','CLASSIC')
+1718876334754|2|commit|
+1718876334768|3|statement|insert into review (comment,rating) values ('Ability blood company color. Trade movement current test. Probably after old training choice. Together less nearly bag I dream election. Something behavior off business answer require.',4)
+1718876334772|2|commit|
+1718876334785|2|statement|insert into review (comment,rating) values ('Send begin ok purpose capital actually the. Bad side pull network you several social evidence. Without bag gas finish set way.',5)
+1718876334788|2|commit|
+1718876334800|2|statement|insert into review (comment,rating) values ('She defense man security. Audience experience case share bank. Dream thousand evidence it sing reflect.',4)
+1718876334803|2|commit|
+1718876334814|2|statement|insert into review (comment,rating) values ('Drug wrong full once forget. Chance add human group. After current simply result building ten admit. Blue trade score help owner bag. Send sort newspaper read become could. Let season thus.',3)
+1718876334817|2|commit|
+1718876334826|1|statement|insert into review (comment,rating) values ('Hit really pretty poor avoid. Wrong least personal daughter animal thousand through process. Management while who cause seem represent throw. Church want thousand trade. Practice there certain sound.',2)
+1718876334829|2|commit|
+1718876334840|1|statement|insert into review (comment,rating) values ('Much hand red debate. After sometimes break behind outside time knowledge. Box doctor crime hold build name magazine. Commercial cause see director its admit no.',2)
+1718876334842|2|commit|
+1718876334853|2|statement|insert into review (comment,rating) values ('Data little control argue place appear forget sister. Control wrong foreign expect figure. Phone huge game really science think.',5)
+1718876334856|2|commit|
+1718876334867|2|statement|insert into review (comment,rating) values ('Add find laugh cut degree once. Tough if fine but apply voice door. Fill nice vote size. Whatever sport there must its several. Data tree yeah serve could reflect.',5)
+1718876334869|2|commit|
+1718876334880|2|statement|insert into review (comment,rating) values ('Radio despite north. Business south thousand type. May thank fall body statement.',3)
+1718876334883|2|commit|
+1718876334894|2|statement|insert into review (comment,rating) values ('Exist stay citizen four. Try produce test hit main group certainly. Decade fact phone home. Sign away apply next response before.',2)
+1718876334899|3|commit|
+1718876345051|1|statement|insert into review (comment,rating) values ('string',0)
+1718876345054|2|commit|
+1718876349237|4|statement|select r1_0.review_id,r1_0.comment,r1_0.rating from review r1_0 offset 0 rows fetch first 10 rows only
+1718876349259|4|statement|select count(r1_0.review_id) from review r1_0
+1718876349261|1|commit|
+1718876353476|5|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718876353484|2|statement|select count(p1_0.party_id) from party p1_0
+1718876353487|2|commit|
+1718876358112|3|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718876358116|2|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718876358119|1|commit|
+1718876479906|24|statement|select * from information_schema.sequences
+1718876479994|22|statement|alter table if exists review add column user_id bigint not null
+1718876480097|7|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718876545506|9|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718876545542|33|statement|drop table if exists party cascade
+1718876545548|6|statement|drop table if exists review cascade
+1718876545552|3|statement|drop table if exists utilisateur cascade
+1718876545583|25|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718876545592|8|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718876545600|7|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718876545605|4|statement|create index idx_party_location on party (party_id)
+1718876545614|8|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718876555118|9|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718876555127|3|commit|
+1718876593282|0|rollback|
+1718876594186|0|rollback|
+1718876653366|31|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718876653389|21|statement|drop table if exists party cascade
+1718876653396|6|statement|drop table if exists review cascade
+1718876653402|5|statement|drop table if exists utilisateur cascade
+1718876663378|3|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718876663382|2|statement|drop table if exists party cascade
+1718876663384|1|statement|drop table if exists review cascade
+1718876663389|2|statement|drop table if exists utilisateur cascade
+1718876663441|45|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718876663454|12|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718876663466|11|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718876663473|5|statement|create index idx_party_location on party (party_id)
+1718876663483|9|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718876687071|9|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718876687083|3|statement|insert into review (comment,rating,user_id) values ('string',0,1)
+1718876687096|2|commit|
+1718876688091|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718876688094|2|statement|insert into review (comment,rating,user_id) values ('string',0,2)
+1718876688097|2|commit|
+1718876692470|7|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718876692486|3|commit|
+1718876698520|8|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type from party p1_0 offset 0 rows fetch first 10 rows only
+1718876698523|3|commit|
+1718876705814|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718876705825|2|commit|
+1718876705834|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=1
+1718876705839|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=2
+1718877326808|52|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718877326848|34|statement|drop table if exists party cascade
+1718877326857|8|statement|drop table if exists review cascade
+1718877326861|4|statement|drop table if exists utilisateur cascade
+1718877338079|3|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718877338082|1|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718877338085|1|statement|drop table if exists party cascade
+1718877338086|1|statement|drop table if exists review cascade
+1718877338088|1|statement|drop table if exists utilisateur cascade
+1718877338128|33|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, user_id bigint not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718877338138|9|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718877338148|9|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718877338154|4|statement|create index idx_party_location on party (party_id)
+1718877338162|7|statement|alter table if exists party add constraint FKrcyfsr19b45ugij9n6d8prvvk foreign key (user_id) references utilisateur
+1718877338165|2|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718877446350|0|rollback|
+1718877447368|0|rollback|
+1718877451629|10|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718877451638|2|commit|
+1718877454319|3|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718877454322|2|commit|
+1718877454889|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718877454891|1|commit|
+1718877520279|19|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718877520307|10|statement|insert into review (comment,rating,user_id) values ('string',0,1)
+1718877520324|2|commit|
+1718877540662|0|rollback|
+1718877575692|17|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id,uo1_0.utilisateur_id,uo1_0.age,uo1_0.city,uo1_0.email,uo1_0.interests,uo1_0.password,uo1_0.region from party p1_0 join utilisateur uo1_0 on uo1_0.utilisateur_id=p1_0.user_id where p1_0.party_id=0
+1718877575699|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=0
+1718877575708|5|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718877575744|11|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T11:59:34.206+0200','string',true,'string',0,'string','CLASSIC',2)
+1718877575748|2|commit|
+1718877583244|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718877583276|1|commit|
+1718877583280|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=2
+1718877590065|3|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718877590069|2|commit|
+1718877599259|3|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718877599262|2|commit|
+1718877599267|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=2
+1718883526071|16|statement|insert into utilisateur (age,city,email,interests,password,region) values (58,'New Charlesview','paulaboyd@example.org','attention, within, front','@19K&%zohy','Arkansas')
+1718883526118|2|rollback|
+1718883526204|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (29,'West Chadberg','daniellehardin@example.com','event, available, notice','h+2qBjfQ!5','Pennsylvania')
+1718883526206|1|rollback|
+1718883526222|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (32,'Brittanyview','ericharris@example.com','opportunity, same, may','CG3KcVdk)q','Indiana')
+1718883526224|1|rollback|
+1718883526242|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (42,'Johnshire','robinsonmiguel@example.net','represent, follow, significant','OXk6C*v*@9','Alabama')
+1718883526244|1|rollback|
+1718883526261|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (40,'New Timothy','bethanyglass@example.org','play, set, type',')#$Y9$Zi9Q','Kentucky')
+1718883526263|1|rollback|
+1718883526279|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (35,'Tiffanyborough','patriciaburton@example.com','various, again, fine','_YCTEOt(g0','Maryland')
+1718883526282|1|rollback|
+1718883526297|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (47,'Rebeccaton','debra41@example.com','old, language, remember','oW#@9YgMUF','Indiana')
+1718883526300|1|rollback|
+1718883526316|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (63,'Ericfurt','lauren53@example.net','child, stand, address','^#E6%YHj(s','South Dakota')
+1718883526318|1|rollback|
+1718883526332|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (48,'West Joshuaview','christinagibbs@example.org','Mr, soon, group','9ryTRkOE)q','Idaho')
+1718883526335|1|rollback|
+1718883526348|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (33,'Herringview','adam23@example.org','student, cultural, expect','*(9y1BgBH2','Washington')
+1718883526351|1|rollback|
+1718883526370|0|rollback|
+1718883526384|0|rollback|
+1718883526398|0|rollback|
+1718883526411|0|rollback|
+1718883526427|0|rollback|
+1718883526438|0|rollback|
+1718883526455|0|rollback|
+1718883526469|0|rollback|
+1718883526483|0|rollback|
+1718883526499|0|rollback|
+1718883526514|0|rollback|
+1718883526528|0|rollback|
+1718883526540|0|rollback|
+1718883526556|0|rollback|
+1718883526569|0|rollback|
+1718883526581|0|rollback|
+1718883526594|0|rollback|
+1718883526608|0|rollback|
+1718883526620|0|rollback|
+1718883526629|0|rollback|
+1718883584471|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718883584475|1|rollback|
+1718883599028|15|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718883599033|2|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718883599042|6|statement|drop table if exists party cascade
+1718883599045|1|statement|drop table if exists review cascade
+1718883599048|2|statement|drop table if exists utilisateur cascade
+1718883620013|5|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718883620017|2|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718883620020|1|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718883620022|1|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718883620025|2|statement|drop table if exists party cascade
+1718883620027|1|statement|drop table if exists party_participants cascade
+1718883620029|1|statement|drop table if exists review cascade
+1718883620032|1|statement|drop table if exists utilisateur cascade
+1718883620087|44|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, user_id bigint not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718883620092|4|statement|create table party_participants (party_id bigint not null, user_id bigint not null)
+1718883620111|19|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718883620123|11|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718883620129|5|statement|create index idx_party_location on party (party_id)
+1718883620139|9|statement|alter table if exists party add constraint FKrcyfsr19b45ugij9n6d8prvvk foreign key (user_id) references utilisateur
+1718883620144|4|statement|alter table if exists party_participants add constraint FK30b9p2y5v2of1r60mp4ij86ow foreign key (user_id) references utilisateur
+1718883620147|2|statement|alter table if exists party_participants add constraint FKjo54mwf4d53qcua95ckpixt0b foreign key (party_id) references party
+1718883620151|3|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718883643314|11|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718883643327|3|commit|
+1718883651708|7|statement|insert into utilisateur (age,city,email,interests,password,region) values (30,'New Jessica','qlane@example.net','dark, picture, positive','J_Z@@4MdZ!','Kansas')
+1718883651727|2|commit|
+1718883651737|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (19,'Dicksonland','brewertracy@example.org','mouth, charge, hear','eEZlUn75@2','Virginia')
+1718883651740|1|commit|
+1718883651751|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (60,'Lisabury','tranmiranda@example.org','system, a, else','3%r8xZ@kZQ','Oregon')
+1718883651754|2|commit|
+1718883651763|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (46,'West Jonathan','floresbrandon@example.com','sell, mind, including','Y^Mhj5h_8R','Colorado')
+1718883651766|2|commit|
+1718883651775|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (25,'South Brett','penny98@example.com','executive, walk, our','%n@WbrAy_1','Hawaii')
+1718883651777|2|commit|
+1718883651788|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (21,'Espinozaview','gouldjohn@example.com','above, its, would','@9oIF&o%rh','Iowa')
+1718883651790|1|commit|
+1718883651800|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (53,'Leeburgh','smcdaniel@example.com','try, born, per','_U8%*Jyp!h','Florida')
+1718883651802|1|commit|
+1718883651811|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (53,'Christianstad','marypeterson@example.net','economic, boy, news','^5C$sXprC%','North Carolina')
+1718883651813|1|commit|
+1718883651824|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (65,'Johnshire','ryanbradford@example.com','mean, ask, official','bb8KqoACz*','Washington')
+1718883651827|1|commit|
+1718883651836|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (55,'Tranmouth','umiranda@example.net','environment, maybe, picture','n116JQg$#o','South Dakota')
+1718883651839|2|commit|
+1718883651856|0|rollback|
+1718883651886|0|rollback|
+1718883651895|0|rollback|
+1718883651907|0|rollback|
+1718883651918|0|rollback|
+1718883651930|0|rollback|
+1718883651942|0|rollback|
+1718883651953|0|rollback|
+1718883651965|0|rollback|
+1718883651977|0|rollback|
+1718883651989|0|rollback|
+1718883651999|0|rollback|
+1718883652009|0|rollback|
+1718883652021|0|rollback|
+1718883652034|0|rollback|
+1718883652045|0|rollback|
+1718883652059|0|rollback|
+1718883652070|0|rollback|
+1718883652085|0|rollback|
+1718883652098|0|rollback|
+1718883669132|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883669136|3|commit|
+1718883689552|9|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883689557|4|commit|
+1718883689659|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883689662|1|commit|
+1718883689808|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883689811|2|commit|
+1718883689962|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883689969|6|commit|
+1718883690103|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883690108|3|commit|
+1718883690240|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883690242|1|commit|
+1718883690378|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883690381|2|commit|
+1718883690522|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883690525|2|commit|
+1718883692727|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883692730|2|commit|
+1718883692875|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883692878|2|commit|
+1718883693012|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693017|3|commit|
+1718883693155|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693158|2|commit|
+1718883693300|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693304|2|commit|
+1718883693440|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693443|1|commit|
+1718883693579|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693583|2|commit|
+1718883693738|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693741|2|commit|
+1718883693884|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883693887|2|commit|
+1718883694022|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883694025|2|commit|
+1718883694204|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883694207|2|commit|
+1718883694367|8|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883694370|3|commit|
+1718883694507|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883694510|2|commit|
+1718883694666|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883694669|2|commit|
+1718883694824|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883694827|2|commit|
+1718883695005|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695008|2|commit|
+1718883695175|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695179|3|commit|
+1718883695326|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695330|2|commit|
+1718883695483|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695486|2|commit|
+1718883695660|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695663|2|commit|
+1718883695816|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695826|8|commit|
+1718883695970|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883695972|2|commit|
+1718883696133|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883696136|1|commit|
+1718883696313|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883696316|2|commit|
+1718883696495|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883696497|2|commit|
+1718883696670|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883696672|2|commit|
+1718883696837|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883696840|1|commit|
+1718883697001|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883697004|2|commit|
+1718883697151|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883697154|2|commit|
+1718883697311|8|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883697314|2|commit|
+1718883699356|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718883699382|4|statement|select count(u1_0.utilisateur_id) from utilisateur u1_0
+1718883699385|1|commit|
+1718883710114|14|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 100 rows only
+1718883710122|1|commit|
+1718883735870|0|rollback|
+1718883736734|0|rollback|
+1718883737037|0|rollback|
+1718883737199|0|rollback|
+1718883737347|0|rollback|
+1718883737485|0|rollback|
+1718883737636|0|rollback|
+1718883737762|0|rollback|
+1718883747495|4|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718883747496|1|commit|
+1718883757784|14|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883757800|12|statement|insert into review (comment,rating,user_id) values ('string',0,50)
+1718883757805|2|commit|
+1718883758453|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883758456|1|statement|insert into review (comment,rating,user_id) values ('string',0,51)
+1718883758460|2|commit|
+1718883758615|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883758618|2|statement|insert into review (comment,rating,user_id) values ('string',0,52)
+1718883758622|2|commit|
+1718883761365|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883761367|1|statement|insert into review (comment,rating,user_id) values ('string',0,53)
+1718883761370|2|commit|
+1718883761534|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883761538|2|statement|insert into review (comment,rating,user_id) values ('string',0,54)
+1718883761552|12|commit|
+1718883761710|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883761712|1|statement|insert into review (comment,rating,user_id) values ('string',0,55)
+1718883761715|1|commit|
+1718883761882|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883761885|2|statement|insert into review (comment,rating,user_id) values ('string',0,56)
+1718883761887|1|commit|
+1718883762042|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883762045|1|statement|insert into review (comment,rating,user_id) values ('string',0,57)
+1718883762048|2|commit|
+1718883762252|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883762255|2|statement|insert into review (comment,rating,user_id) values ('string',0,58)
+1718883762258|2|commit|
+1718883762400|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883762404|1|statement|insert into review (comment,rating,user_id) values ('string',0,59)
+1718883762408|2|commit|
+1718883762581|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883762583|1|statement|insert into review (comment,rating,user_id) values ('string',0,60)
+1718883762586|1|commit|
+1718883762756|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883762758|1|statement|insert into review (comment,rating,user_id) values ('string',0,61)
+1718883762761|2|commit|
+1718883762942|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883762944|1|statement|insert into review (comment,rating,user_id) values ('string',0,62)
+1718883762947|1|commit|
+1718883763109|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883763111|1|statement|insert into review (comment,rating,user_id) values ('string',0,63)
+1718883763114|2|commit|
+1718883763267|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883763270|1|statement|insert into review (comment,rating,user_id) values ('string',0,64)
+1718883763277|3|commit|
+1718883763444|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883763447|1|statement|insert into review (comment,rating,user_id) values ('string',0,65)
+1718883763449|1|commit|
+1718883763606|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883763609|1|statement|insert into review (comment,rating,user_id) values ('string',0,66)
+1718883763612|2|commit|
+1718883763827|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883763830|1|statement|insert into review (comment,rating,user_id) values ('string',0,67)
+1718883763833|2|commit|
+1718883763967|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883763969|1|statement|insert into review (comment,rating,user_id) values ('string',0,68)
+1718883763973|2|commit|
+1718883764137|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883764142|1|statement|insert into review (comment,rating,user_id) values ('string',0,69)
+1718883764145|2|commit|
+1718883772984|2|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718883773009|2|statement|select count(r1_0.review_id) from review r1_0
+1718883773010|1|commit|
+1718883773025|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=50
+1718883773030|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=51
+1718883773033|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=52
+1718883773035|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=53
+1718883773038|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=54
+1718883773040|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=55
+1718883773042|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=56
+1718883773044|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=57
+1718883773047|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=58
+1718883773050|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=59
+1718883804586|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883804619|8|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',70)
+1718883804625|2|commit|
+1718883810765|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883810769|1|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',71)
+1718883810772|2|commit|
+1718883810932|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883810937|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',72)
+1718883810953|15|commit|
+1718883811193|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883811197|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',73)
+1718883811200|2|commit|
+1718883811368|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883811373|3|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',74)
+1718883811376|3|commit|
+1718883811533|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883811548|13|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',75)
+1718883811553|4|commit|
+1718883811787|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718883811791|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T13:43:07.472+0200','string',true,'string',10,'string','CLASSIC',76)
+1718883811794|2|commit|
+1718883818119|2|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718883818145|1|commit|
+1718883818147|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=70
+1718883818149|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=71
+1718883818151|0|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=72
+1718883818153|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=73
+1718883818155|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=74
+1718883818157|1|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=75
+1718883818159|0|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=76
+1718884552216|39|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718884552223|5|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718884552226|2|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718884552229|2|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718884552254|24|statement|drop table if exists party cascade
+1718884552257|3|statement|drop table if exists party_participants cascade
+1718884552263|5|statement|drop table if exists review cascade
+1718884552269|5|statement|drop table if exists utilisateur cascade
+1718884571393|4|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718884571396|1|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718884571399|1|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718884571402|1|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718884571405|2|statement|drop table if exists party cascade
+1718884571407|1|statement|drop table if exists party_participants cascade
+1718884571409|1|statement|drop table if exists review cascade
+1718884571412|1|statement|drop table if exists utilisateur cascade
+1718884571455|34|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, user_id bigint not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718884571457|2|statement|create table party_participants (party_id bigint not null, user_id bigint not null)
+1718884571466|8|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718884571476|9|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718884571482|5|statement|create index idx_party_location on party (party_id)
+1718884571492|9|statement|alter table if exists party add constraint FKrcyfsr19b45ugij9n6d8prvvk foreign key (user_id) references utilisateur
+1718884571495|2|statement|alter table if exists party_participants add constraint FK30b9p2y5v2of1r60mp4ij86ow foreign key (user_id) references utilisateur
+1718884571499|3|statement|alter table if exists party_participants add constraint FKjo54mwf4d53qcua95ckpixt0b foreign key (party_id) references party
+1718884571502|3|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718884762574|3|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718884762584|1|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718884762587|1|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718884762590|2|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718884762595|4|statement|drop table if exists party cascade
+1718884762600|3|statement|drop table if exists party_participants cascade
+1718884762604|2|statement|drop table if exists review cascade
+1718884762606|1|statement|drop table if exists utilisateur cascade
+1718884775832|4|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718884775838|2|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718884775842|1|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718884775845|1|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718884775848|2|statement|drop table if exists party cascade
+1718884775852|2|statement|drop table if exists party_participants cascade
+1718884775856|2|statement|drop table if exists review cascade
+1718884775859|1|statement|drop table if exists utilisateur cascade
+1718884775887|16|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, user_id bigint not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718884775890|3|statement|create table party_participants (party_id bigint not null, user_id bigint not null)
+1718884775899|7|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718884775908|7|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718884775914|5|statement|create index idx_party_location on party (party_id)
+1718884775921|6|statement|alter table if exists party add constraint FKrcyfsr19b45ugij9n6d8prvvk foreign key (user_id) references utilisateur
+1718884775924|3|statement|alter table if exists party_participants add constraint FK30b9p2y5v2of1r60mp4ij86ow foreign key (user_id) references utilisateur
+1718884775928|3|statement|alter table if exists party_participants add constraint FKjo54mwf4d53qcua95ckpixt0b foreign key (party_id) references party
+1718884775932|3|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718884851823|7|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884851857|4|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T14:00:13.189+0200','string',true,'string',0,'string','CLASSIC',1)
+1718884851901|2|rollback|
+1718884869932|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884869936|2|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T14:00:13.189+0200','string',true,'string',0,'string','CLASSIC',2)
+1718884869941|3|rollback|
+1718884899284|103|statement|select p1_0.party_id,p1_0.date,p1_0.description,p1_0.is_paid,p1_0.location,p1_0.max_participants,p1_0.name,p1_0.party_type,p1_0.user_id from party p1_0 offset 0 rows fetch first 10 rows only
+1718884899343|6|commit|
+1718884934432|6|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884934441|4|commit|
+1718884937183|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884937186|2|commit|
+1718884937333|3|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884937336|3|commit|
+1718884937494|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884937497|2|commit|
+1718884937658|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884937661|2|commit|
+1718884937833|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884937838|3|commit|
+1718884937985|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884937989|2|commit|
+1718884942354|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 offset 0 rows fetch first 10 rows only
+1718884942372|1|commit|
+1718884988904|1|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884988921|14|statement|insert into review (comment,rating,user_id) values ('string',0,10)
+1718884988925|2|commit|
+1718884989792|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884989795|2|statement|insert into review (comment,rating,user_id) values ('string',0,11)
+1718884989799|2|commit|
+1718884989940|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884989961|18|statement|insert into review (comment,rating,user_id) values ('string',0,12)
+1718884989965|3|commit|
+1718884990092|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718884990096|2|statement|insert into review (comment,rating,user_id) values ('string',0,13)
+1718884990099|2|commit|
+1718884994798|3|statement|select r1_0.review_id,r1_0.comment,r1_0.rating,r1_0.user_id from review r1_0 offset 0 rows fetch first 10 rows only
+1718884994984|1|commit|
+1718884995071|5|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=10
+1718884995089|6|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=11
+1718884995094|2|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=12
+1718884995110|13|statement|select u1_0.utilisateur_id,u1_0.age,u1_0.city,u1_0.email,u1_0.interests,u1_0.password,u1_0.region from utilisateur u1_0 where u1_0.utilisateur_id=13
+1718885012212|2|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718885012227|5|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T14:00:13.189+0200','string',true,'string',0,'string','CLASSIC',14)
+1718885012231|1|rollback|
+1718885175850|13|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718885175878|15|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T14:00:13.189+0200','string',true,'string',0,'string','CLASSIC',15)
+1718885175884|2|rollback|
+1718885285232|8|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718885285277|40|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T14:07:45.243+0200','string',true,'string',0,'string','CLASSIC',16)
+1718885285283|2|rollback|
+1718885306361|40|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718885306367|5|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718885306371|3|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718885306374|3|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718885306404|29|statement|drop table if exists party cascade
+1718885306409|4|statement|drop table if exists party_participants cascade
+1718885306416|6|statement|drop table if exists review cascade
+1718885306421|5|statement|drop table if exists utilisateur cascade
+1718885318165|5|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718885318171|3|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718885318175|2|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718885318177|1|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718885318180|1|statement|drop table if exists party cascade
+1718885318182|1|statement|drop table if exists party_participants cascade
+1718885318185|1|statement|drop table if exists review cascade
+1718885318189|3|statement|drop table if exists utilisateur cascade
+1718885318235|36|statement|create table party (is_paid boolean not null, max_participants integer not null, date timestamp(6), party_id bigserial not null, user_id bigint not null, description varchar(255), location varchar(255), name varchar(255), party_type varchar(255) check (party_type in ('CLASSIC','VIDEO_GAME','BOARD_GAME')), primary key (party_id))
+1718885318241|4|statement|create table party_participants (party_id bigint not null, user_id bigint not null)
+1718885318253|10|statement|create table review (rating integer not null, review_id bigserial not null, user_id bigint not null, comment TEXT, primary key (review_id))
+1718885318265|11|statement|create table utilisateur (age integer not null, utilisateur_id bigserial not null, city varchar(255), email varchar(255), interests varchar(255), password varchar(255), region varchar(255), primary key (utilisateur_id))
+1718885318274|7|statement|create index idx_party_location on party (party_id)
+1718885318286|11|statement|alter table if exists party add constraint FKrcyfsr19b45ugij9n6d8prvvk foreign key (user_id) references utilisateur
+1718885318292|5|statement|alter table if exists party_participants add constraint FK30b9p2y5v2of1r60mp4ij86ow foreign key (user_id) references utilisateur
+1718885318296|3|statement|alter table if exists party_participants add constraint FKjo54mwf4d53qcua95ckpixt0b foreign key (party_id) references party
+1718885318300|3|statement|alter table if exists review add constraint FKm148i4fvhh1nvxi73bjsx1c9q foreign key (user_id) references utilisateur
+1718885334515|13|statement|insert into utilisateur (age,city,email,interests,password,region) values (0,'string','string','string','string','string')
+1718885334593|5|statement|insert into party (date,description,is_paid,location,max_participants,name,party_type,user_id) values ('2024-06-20T14:07:45.243+0200','string',true,'string',0,'string','CLASSIC',1)
+1718885334690|3|rollback|
+1718885388634|51|statement|alter table if exists party drop constraint if exists FKrcyfsr19b45ugij9n6d8prvvk
+1718885388642|6|statement|alter table if exists party_participants drop constraint if exists FK30b9p2y5v2of1r60mp4ij86ow
+1718885388648|5|statement|alter table if exists party_participants drop constraint if exists FKjo54mwf4d53qcua95ckpixt0b
+1718885388652|3|statement|alter table if exists review drop constraint if exists FKm148i4fvhh1nvxi73bjsx1c9q
+1718885388676|24|statement|drop table if exists party cascade
+1718885388681|4|statement|drop table if exists party_participants cascade
+1718885388687|5|statement|drop table if exists review cascade
+1718885388692|4|statement|drop table if exists utilisateur cascade

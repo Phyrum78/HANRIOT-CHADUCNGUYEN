@@ -52,3 +52,24 @@ for _ in range(10):
         print(response.json())
         print()
 
+
+# Loop to generate 10 POST requests
+for _ in range(10):
+    # Generate fake data
+    data = {
+        "userId": random.randint(1, 100),  # Assuming you have users with IDs 1-100
+        "reviewerId": random.randint(1, 100),  # Assuming you have users with IDs 1-100
+        "rating": random.randint(1, 5),  # Assuming rating is from 1 to 5
+        "comment": fake.text(max_nb_chars=200)  # A random text of up to 200 characters
+    }
+    print("input")
+    print(data)
+
+    # Send the POST request
+    response = requests.post(host + "/reviews", json=data)
+
+    # Check the response
+    if response.status_code == 200:
+        print(f"POST request successful with ID: {response.json()['id']}")
+        print(response.json())
+        print()

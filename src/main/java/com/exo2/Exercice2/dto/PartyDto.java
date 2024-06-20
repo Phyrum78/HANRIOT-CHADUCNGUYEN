@@ -1,18 +1,17 @@
 package com.exo2.Exercice2.dto;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class PartyDto extends AbsDto<Long> {
 
-    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Long id;
 
     private String name;
@@ -21,4 +20,6 @@ public class PartyDto extends AbsDto<Long> {
     private Timestamp date;
     private int maxParticipants;
     private boolean isPaid;
+    UserDto userOwner;
+    private List<UserDto> participants;
 }

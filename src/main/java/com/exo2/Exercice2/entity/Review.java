@@ -19,13 +19,9 @@ public class Review {
     @Column(name = "review_id")
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    private Utilisateur user;
-
-    @ManyToOne
-    @JoinColumn(name = "reviewer_id", nullable = false)
-    private Utilisateur reviewer;
+    private Utilisateur userOwner;
 
     @Column(nullable = false)
     private int rating;
@@ -42,7 +38,5 @@ public class Review {
     protected void onUpdate() {
         LocalDateTime updatedAt = LocalDateTime.now();
     }
-
-
 
 }

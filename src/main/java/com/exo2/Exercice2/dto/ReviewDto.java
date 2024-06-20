@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ReviewDto extends AbsDto<Long> {
-    @Schema(accessMode = Schema.AccessMode.AUTO)
     private Long id;
 
-    private Long userId;
-    private Long reviewerId;
     private int rating;
     private String comment;
+    UserDto userOwner;
 }
