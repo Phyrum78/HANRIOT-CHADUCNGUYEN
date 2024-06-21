@@ -36,7 +36,7 @@ public class Party {
     private Timestamp date;
     private int maxParticipants;
     private boolean isPaid;
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE,}, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE,}, fetch = FetchType.EAGER)
     @JoinTable(
             name = "party_participants",
             joinColumns = @JoinColumn(name = "party_id"),

@@ -68,9 +68,10 @@ def assertParty(partyInput, partyOutput):
 
 unassignedId = 1000000000
 
-@pytest.mark.parametrize("endpoint", ["/users", 
+@pytest.mark.parametrize("endpoint", [
+                                    "/users", 
                                     "/reviews",
-                                       "/partys"
+                                    "/partys"
                                       ])
 def test_crud_operations(api_client, endpoint):
     # Get one by non-existent ID
