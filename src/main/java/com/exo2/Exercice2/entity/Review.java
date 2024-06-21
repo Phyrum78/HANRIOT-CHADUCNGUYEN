@@ -21,7 +21,7 @@ public class Review {
     @Column(name = "review_id")
     private Long id;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE,}, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private Utilisateur userOwner;
 

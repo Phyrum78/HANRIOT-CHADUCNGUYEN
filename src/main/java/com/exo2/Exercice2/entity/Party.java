@@ -26,7 +26,7 @@ public class Party {
     @Column(name = "party_id")
     private Long id;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE,}, fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private Utilisateur userOwner;
 
@@ -36,7 +36,7 @@ public class Party {
     private Timestamp date;
     private int maxParticipants;
     private boolean isPaid;
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE,}, fetch = FetchType.LAZY)
     @JoinTable(
             name = "party_participants",
             joinColumns = @JoinColumn(name = "party_id"),
