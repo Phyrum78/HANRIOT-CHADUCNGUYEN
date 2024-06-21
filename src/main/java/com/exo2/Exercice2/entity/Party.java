@@ -11,7 +11,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "party",indexes = {
-        @Index(name = "idx_party_location", columnList = "party_id")
+        @Index(name = "idx_party_location", columnList = "location")
 })
 @Data
 @AllArgsConstructor
